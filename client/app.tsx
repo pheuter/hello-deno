@@ -1,4 +1,4 @@
-import { React, useState } from "./client-dep.ts";
+import { React, useState } from "./dep.ts";
 
 export default function App() {
   const [count, setCount] = useState(0);
