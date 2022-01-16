@@ -1,12 +1,4 @@
-/** @jsx createElement */
-import {
-  Application,
-  etag,
-  send,
-  createElement,
-  ReactDOMServer,
-  Router,
-} from "./dep.ts";
+import { Application, etag, send, ReactDOMServer, Router } from "./dep.ts";
 import App from "./client/app.tsx";
 
 const router = new Router();

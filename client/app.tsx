@@ -1,5 +1,4 @@
-/** @jsx createElement */
-import { createElement, useState } from "./dep.ts";
+import { useState } from "./dep.ts";
 
 export default function App() {
   const [count, setCount] = useState(0);
