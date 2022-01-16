@@ -1,6 +1,7 @@
+/** @jsx createElement */
 /// <reference lib="dom" />
 
-import { React, ReactDOM } from "./dep.ts";
+import { createElement, ReactDOM } from "./dep.ts";
 import App from "./app.tsx";
 
 ReactDOM.hydrate(<App />, document.getElementById("root"));

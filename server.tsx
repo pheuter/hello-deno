@@ -1,4 +1,12 @@
-import { Application, send, React, ReactDOMServer, Router } from "./dep.ts";
+/** @jsx createElement */
+import {
+  Application,
+  etag,
+  send,
+  createElement,
+  ReactDOMServer,
+  Router,
+} from "./dep.ts";
 import App from "./client/app.tsx";
 
 const router = new Router();
@@ -23,6 +31,7 @@ router.get("/", (context) => {
 
 const app = new Application();
 
+app.use(etag.factory());
 app.use(router.routes());
 app.use(router.allowedMethods());
 app.use(async (context) => {

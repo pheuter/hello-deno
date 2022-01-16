@@ -1,4 +1,5 @@
-import { React, useState } from "./dep.ts";
+/** @jsx createElement */
+import { createElement, useState } from "./dep.ts";
 
 export default function App() {
   const [count, setCount] = useState(0);
